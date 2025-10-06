@@ -2,48 +2,26 @@
 #include <stdlib.h>
 #include <string.h>
 
-int main(void) {
+int main() {
+    FILE *filePointer = fopen("Trabalho/arquivo.csv" , "r");
 
-    FILE *arquivo = fopen("Trabalho/arquivo.csv" , "r");
-    char buffer[1000];
-    char *data;
-    if (arquivo == NULL) {
-        printf("Erro ao carregar arquivo \n");
-        exit(-1);
+    char line [200]; //line é um buffer com a capacidade máxima de armazenamento igual a quantidade de caracteres que a maior linha da tabela possui
+
+    //lendo cada linha do arquivo até chegar no final (achar um valor nulo)
+    while (fgets(line, 200, filePointer) != NULL) {
+        line[strlen(line) - 1] = '\0';
+        printf("%s\n", line);
+
+        char* strPointer = strtok(line, ",");
+        for (int i=0; i<6; i++) {
+            strPointer = strtok(NULL, ",");
+        }
+        printf("%s\n", strPointer);
+        strPointer[strlen(strPointer) - 1] = '\0';
+        float categoria = atof(strPointer+1);
+        printf("Categoria: %f\n", categoria);
     }
-    printf("Arquivo aberto \n");
 
-    //primeira linha
-    fgets(buffer , sizeof(buffer) , arquivo);
-    printf("%s\n" , buffer );
-
-
-    //separacao dos valores
-    data = strtok(buffer,",");
-    printf("%s\n" , data);
-
-    data = strtok(NULL,",");
-    printf("%s\n" , data);
-
-    data = strtok(NULL,",");
-    printf("%s\n" , data);
-
-    data = strtok(NULL,",");
-    printf("%s\n" , data);
-
-    data = strtok(NULL,",");
-    printf("%s\n" , data);
-
-    data = strtok(NULL,",");
-    printf("%s\n" , data);
-
-    data = strtok(NULL,",");
-    printf("%s\n" , data);
-
-
-    fgets(buffer , sizeof(buffer) , arquivo);
-    printf("%s\n" , buffer );
-
-
+    fclose(filePointer); //fecha o arquivo
     return 0;
 }
