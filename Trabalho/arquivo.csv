@@ -29,15 +29,15 @@ Numero do alimento,Descricao do alimento,Umidade(%),Energia(Kcal),Proteina(g),Ca
 208,Laranja baia crua,87.1,45,1.0,11.5,3
 221,Maca Argentina com casca crua,82.6,63,0.2,16.6,3
 240,Nespera crua,87.8,43,0.3,11.5,3
-259,Azeite de dende,NA,884,NA,4
-260,Azeite de oliva extra virgem,NA,884,NA,NA,4
+259,Azeite de dende,0,884,0,0,4
+260,Azeite de oliva extra virgem,0,884,0,0,4
 261,Manteiga com sal,15.8,726,0.4,0.1,4
-263,Margarina com oleo hidrogenado com sal (65% de lipideos),32.2,596,Tr,0.0,4
-265,Margarina com oleo interesterificado com sal (65%de lipideos),32.0,594,Tr,0.0,4
-267,oleo de babacu,NA,884,NA,NA,4
-268,oleo de canola,NA,884,NA,NA,4
-269,oleo de girassol,NA,884,NA,NA,4
-270,oleo de milho,NA,884,NA,NA,4
+263,Margarina com oleo hidrogenado com sal (65% de lipideos),32.2,596,0,0.0,4
+265,Margarina com oleo interesterificado com sal (65%de lipideos),32.0,594,0,0.0,4
+267,Oleo de babacu,0,884,0,0,4
+268,Oleo de canola,0,884,0,0,4
+269,Oleo de girassol,0,884,0,0,4
+270,Oleo de milho,0,884,0,0,4
 273,Abadejo file congelado assado,74.3,112,23.5,0.0,5
 279,Bacalhau salgado cru,47.9,136,29.0,0.0,5
 281,Cacao posta com farinha de trigo frita,60.6,208,25.0,3.1,5
@@ -70,7 +70,7 @@ Numero do alimento,Descricao do alimento,Umidade(%),Energia(Kcal),Proteina(g),Ca
 468,Queijo requeijao cremoso,62.5,257,9.6,2.4,7
 470,Bebida isotonica sabores variados,93.5,26,0.0,6.4,8
 471,Cafe infusao 10%,97.4,9,0.7,1.5,8
-473,Cana caldo de,81.7,65,Tr,18.2,8
+473,Cana caldo de,81.7,65,0,18.2,8
 474,Cerveja pilsen,92.4,41,0.6,3.3,8
 475,Cha erva-doce infusao 5%,99.6,1,0.0,0.4,8
 477,Cha preto infusao 5%,99.4,2,0.0,0.6,8
